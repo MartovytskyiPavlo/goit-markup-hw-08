@@ -1164,9 +1164,11 @@ ul {
   position: relative;
   display: flex;
   overflow: hidden;
+  width: 100%;
 }
 .portfolio .portfolio__image {
   display: block;
+  width: 100%;
 }
 .portfolio .portfolio__name {
   color: var(--primary-text-color);
@@ -1232,7 +1234,18 @@ ul {
   transform: translateY(0);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .portfolio .flex-element {
+    width: 100%;
+  }
+  .portfolio .flex-element:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio .portfolio__item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .portfolio .flex-element {
     width: 450px;
   }
