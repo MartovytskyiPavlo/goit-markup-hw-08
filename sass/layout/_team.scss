@@ -16,6 +16,7 @@
 
     .team__image {
         display: block;
+        width: 100%;
     }
 
     .team-info {
@@ -42,7 +43,7 @@
 
 @media screen and (max-width:767px) {
     .team__item {
-        width: 450px;
+        width: 100%;
 
         &:not(:last-child) {
             margin-bottom: 30px;
